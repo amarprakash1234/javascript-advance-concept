@@ -1,25 +1,25 @@
-let url2 = "https://dog.ceo/api/breeds/image/random";
+// let url2 = "https://dog.ceo/api/breeds/image/random";
 
-let btn = document.querySelector('button');
+// let btn = document.querySelector('button');
 
-btn.addEventListener('click', async () => {
+// btn.addEventListener('click', async () => {
 
-    let fact = await getFact();
-    console.log(fact);
+//     let fact = await getFact();
+//     console.log(fact);
 
-    let img = document.querySelector('img');
-    img.setAttribute("src", fact);
-});
+//     let img = document.querySelector('img');
+//     img.setAttribute("src", fact);
+// });
 
 
-async function getFact() {
-    try {
-        let res = await axios.get(url2);
-        return res.data.message;
-    } catch {
-        return "No Fact found"
-    }
-}
+// async function getFact() {
+//     try {
+//         let res = await axios.get(url2);
+//         return res.data.message;
+//     } catch {
+//         return "No Fact found"
+//     }
+// }
 
 
 // let btn = document.querySelector('button');
@@ -81,6 +81,35 @@ async function getFact() {
 // getFact();
 
 // console.log("Hello World!!");
+
+// function saveToDB(data) {
+//     return  new Promise((resolve, reject) => {
+//         let x = Math.floor(Math.random()*10);
+
+//         if(x > 4) {
+//             resolve("Data was saved!");
+//         } else {
+//             reject("Data was not saved");
+//         }
+//     });
+// }
+
+
+// saveToDB("Amar Prakash")
+//     .then((result) => {
+//         console.log("About Data1 : ", result);
+//         return saveToDB("ApnaCollege");
+//     })
+//     .then((result) => {
+//         console.log("About Data2 : ", result);
+//         return saveToDB("Rishikesh Kumar");
+//     })
+//     .then((result) => {
+//         console.log("About Data3 : ", result);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
 
 
 

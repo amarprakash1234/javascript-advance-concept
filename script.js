@@ -1,50 +1,50 @@
-// let url2 = "https://dog.ceo/api/breeds/image/random";
+let url2 = "https://dog.ceo/api/breeds/image/random";
 
-// let btn = document.querySelector('button');
+let btn2 = document.querySelector('#btn2');
 
-// btn.addEventListener('click', async () => {
+btn2.addEventListener('click', async () => {
 
-//     let fact = await getFact();
-//     console.log(fact);
+    let fact = await getFact2();
+    console.log(fact);
 
-//     let img = document.querySelector('img');
-//     img.setAttribute("src", fact);
-// });
-
-
-// async function getFact() {
-//     try {
-//         let res = await axios.get(url2);
-//         return res.data.message;
-//     } catch {
-//         return "No Fact found"
-//     }
-// }
+    let img = document.querySelector('img');
+    img.setAttribute("src", fact);
+});
 
 
-// let btn = document.querySelector('button');
+async function getFact2() {
+    try {
+        let res = await axios.get(url2);
+        return res.data.message;
+    } catch {
+        return "No Fact found"
+    }
+}
 
-// btn.addEventListener('click', async () => {
 
-//     let fact = await getFact();
-//     let p = document.querySelector('p');
-//     p.innerHTML = fact;
-// });
+let btn1 = document.querySelector('#btn1');
 
+btn1.addEventListener('click', async () => {
 
+    let fact = await getFact1();
+    let p = document.querySelector('p');
+    p.innerHTML = fact;
+});
 
 
 
-// let url = "https://catfact.ninja/fact";
 
-// async function getFact() {
-//     try {
-//         let res = await axios.get(url);
-//         return res.data.fact;
-//     } catch {
-//         return "No Fact found"
-//     }
-// }
+
+let url = "https://catfact.ninja/fact";
+
+async function getFact1() {
+    try {
+        let res = await axios.get(url);
+        return res.data.fact;
+    } catch {
+        return "No Fact found"
+    }
+}
 
 
 
@@ -111,6 +111,17 @@
 //         console.log(err);
 //     });
 
+
+// let url = "https://catfact.ninja/fact";
+
+// fetch(url)
+//     .then((res) => {
+//         console.log(res);
+//         console.log(res.json());
+//     })
+//     .catch((err) => {
+//         console.log("ERROR : ", err);
+//     });
 
 
 

@@ -1,50 +1,50 @@
-let url2 = "https://dog.ceo/api/breeds/image/random";
+// let url2 = "https://dog.ceo/api/breeds/image/random";
 
-let btn2 = document.querySelector('#btn2');
+// let btn2 = document.querySelector('#btn2');
 
-btn2.addEventListener('click', async () => {
+// btn2.addEventListener('click', async () => {
 
-    let fact = await getFact2();
-    console.log(fact);
+//     let fact = await getFact2();
+//     console.log(fact);
 
-    let img = document.querySelector('img');
-    img.setAttribute("src", fact);
-});
-
-
-async function getFact2() {
-    try {
-        let res = await axios.get(url2);
-        return res.data.message;
-    } catch {
-        return "No Fact found"
-    }
-}
+//     let img = document.querySelector('img');
+//     img.setAttribute("src", fact);
+// });
 
 
-let btn1 = document.querySelector('#btn1');
+// async function getFact2() {
+//     try {
+//         let res = await axios.get(url2);
+//         return res.data.message;
+//     } catch {
+//         return "No Fact found"
+//     }
+// }
 
-btn1.addEventListener('click', async () => {
 
-    let fact = await getFact1();
-    let p = document.querySelector('p');
-    p.innerHTML = fact;
-});
+// let btn1 = document.querySelector('#btn1');
 
+// btn1.addEventListener('click', async () => {
 
+//     let fact = await getFact1();
+//     let p = document.querySelector('p');
+//     p.innerHTML = fact;
+// });
 
 
 
-let url = "https://catfact.ninja/fact";
 
-async function getFact1() {
-    try {
-        let res = await axios.get(url);
-        return res.data.fact;
-    } catch {
-        return "No Fact found"
-    }
-}
+
+// let url = "https://catfact.ninja/fact";
+
+// async function getFact1() {
+//     try {
+//         let res = await axios.get(url);
+//         return res.data.fact;
+//     } catch {
+//         return "No Fact found"
+//     }
+// }
 
 
 
@@ -122,6 +122,102 @@ async function getFact1() {
 //     .catch((err) => {
 //         console.log("ERROR : ", err);
 //     });
+
+
+
+// document.all[7].style.color = "red";
+
+// let x = document.querySelectorAll("p");
+
+// console.log(x);
+
+// x[2].style.color = "red";
+
+// let y = document.getElementById("hw");
+
+// y.style.color = "yellow";
+
+// let para = document.querySelector(".hello");
+
+// console.log(para.classList);
+
+// para.classList.add("javaScript");
+
+// console.log(para.classList);
+
+// para.classList.remove("hello");
+
+// console.log(para.classList);
+
+// console.log(para.classList.contains("py"));
+
+// let div = document.querySelector("div");
+
+// console.log(div.children);
+
+// let btn = document.querySelector("button");
+
+// let para = document.querySelector("p");
+
+// for(btn of btns) {
+//     btn.addEventListener("click", () => {
+//         console.log("Hello World!")
+//     });
+//     btn.addEventListener("click", () => {
+//         console.log("Hello Duniya!")
+//     });
+// }
+
+// btn.addEventListener("click", () => {
+//     console.log(this);
+// });
+
+// btn.addEventListener("click", function() {
+//     console.log(this);
+// });
+
+// para.addEventListener("keydown", function() {
+//     para.style.backgroundColor = "yellow";
+// })
+
+// let inp = document.querySelector("input");
+
+// inp.addEventListener("keydown", function(evt) {
+//     console.log("Key was pressed!")
+//     console.log(evt.key);
+//     console.log(evt.code);
+// });
+
+// inp.addEventListener("keyup", function(evt) {
+//     console.log("Key was released!")
+//     console.log(evt.key);
+//     console.log(evt.code);
+// });
+
+// let form = document.querySelector("form");
+// let username;
+// form.addEventListener("submit", function(evt) { 
+//     evt.preventDefault();
+//     // alert("Form submitted!");
+//     // let inp = document.querySelector('input');
+//     // username = inp.value;
+//     // inp.value = "";
+//     // console.log(username);
+//     // console.log(form.elements); // or this.elements
+// })
+
+// let inp = document.querySelector("#user");
+// let para = document.querySelector("p");
+
+// inp.addEventListener("change", function(evt) {
+//     console.log("Input Changed!");
+//     console.log("Final Value = ", this.value);
+// })
+
+// inp.addEventListener("input", function(evt) {
+//     para.innerText = this.value;
+// })
+
 
 
 

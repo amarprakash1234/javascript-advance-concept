@@ -217,6 +217,45 @@
 // inp.addEventListener("input", function(evt) {
 //     para.innerText = this.value;
 // })
+// let url = "https://catfact.ninja/fat";
+
+// function promiseExample() {
+//     return new Promise((resolve, reject) => {
+//         resolve("Hello World!");
+//     });
+// }
+
+
+// async function check() {
+//     // let res = await promiseExample();
+//     // console.log(res);
+
+//         let res = await fetch(url);
+//         let data = await res.json();
+//         console.log(data);
+//         let res1 = await fetch(url);
+//         let data1 = await res1.json();
+//         console.log(data1);
+//         let res2 = await fetch(url);
+//         let data2 = await res2.json();
+//         console.log(data2);
+    
+
+//     console.log("Hello World!");
+// }
+// check();
+
+
+// console.log("Hello World!");
+
+
+// async function hello() {
+//     console.log("Hello!");
+// }
+
+
+
+
 
 
 
